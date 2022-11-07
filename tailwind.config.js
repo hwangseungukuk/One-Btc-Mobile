@@ -2,11 +2,11 @@ tailwind.config = {
     theme: {
       extend: {
         colors: {
-            main : '#080b13',
-            semiMain : '#1a1f2d',
+            main : '#f9fbfd',
+            semiMain : '#f0f0f0',
             primary : '#0671f4',
-            secondary : '#c9c9c9',
-            link : '#8f8f8f'
+            secondary : '#212529',
+            link : '#555555'
         },
       }
     }

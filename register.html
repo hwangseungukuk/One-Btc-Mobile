@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One BTC Design Login Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/tailwind.js"></script>
+    <script src="tailwind.config.js"></script>
+    
+</head>
+<body class="bg-main">
+    <div class="container mx-auto">
+        <div class="header">
+            <!-- Brand Icon -->
+            <div class="relative flex items-center mr-20 py-5 cursor-pointer w-80" onclick="location.href='index.html'">
+                <img class="w-20 mr-2" src="assets/images/icon/logo.png" alt="">
+                <h3 class="text-3xl font-black italic text-primary">ONE BTC</h3>
+            </div>
+        </div>
+
+        <div class="content mx-auto mt-10" style="width: 1200px">
+            <h2 class="text-4xl font-bold mb-3">Enter Account Detail</h2>
+            <label class="text-link mb-5 block">회원가입에 필요한 정보를 입력하세요.</label>
+            <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200">
+                <div class="flex mb-5">
+                    <div class="w-2/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">ID (영문, 숫자포함 5자 이상)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="아이디를 입력하세요">
+                    </div>
+                    <div class="w-2/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">담당자코드</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="담당자코드를 입력하세요">
+                    </div>
+                </div>
+
+                <div class="flex mb-5">
+                    <div class="w-2/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">비밀번호 (4자이상)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="사용하실 비밀번호를 입력하세요">
+                    </div>
+                    <div class="w-2/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">비밀번호 재확인</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="비밀번호를 다시 입력해주세요">
+                    </div>
+                </div>
+
+                <div class="flex mb-5">
+                    <div class="w-full px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">휴대폰번호 (숫자만)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="01000000000 (-없이)">
+                    </div>
+                </div>
+
+                <div class="flex mb-5">
+                    <div class="w-2/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">이름 (예금주와 동일)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="본인 성함을 입력해주세요">
+                    </div>
+                    <div class="w-2/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">닉네임 (한글만 7자내)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="사용하실 닉네임을 입력해주세요">
+                    </div>
+                </div>
+
+                <div class="flex mb-5">
+                    <div class="w-1/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">은행선택</label>
+                        <select class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" name="usr_bank" id="usr_bank">
+                            <option value="" selected="">은행선택</option>
+                            <option value="국민">국민</option>
+                            <option value="우리">우리</option>
+                            <option value="신한">신한(조흥)</option>
+                            <option value="농협">농협</option>
+                            <option value="축협">축협</option>
+                            <option value="기업">기업</option>
+                            <option value="하나">하나</option>
+                            <option value="우체국">우체국</option>
+                            <option value="SC제일">SC제일</option>
+                            <option value="외환">외환</option>
+                            <option value="산업">산업</option>
+                            <option value="씨티">씨티(한미)</option>
+                            <option value="수협">수협</option>
+                            <option value="신협">신협</option>
+                            <option value="새마을금고">새마을금고</option>
+                            
+                            <option value="카카오뱅크">카카오뱅크</option>
+                            <option value="상호저축">상호저축</option>
+                            <option value="경기">경기</option>
+                            <option value="경남">경남</option>
+                            <option value="광주">광주</option>
+                            <option value="부산">부산</option>
+                            <option value="제주">제주</option>
+                            <option value="전북">전북</option>
+                            <option value="대구">대구</option>
+                            
+                            </select>
+                    </div>
+                    <div class="w-1/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">계좌번호 (본인명 계좌)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="거래에 사용하실 계좌번호를 입력하세요 (-없이)">
+                    </div>
+                    <div class="w-1/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">출금 비밀번호 (거래소)</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="로그인 비밀번호는 사용할수 없습니다.">
+                    </div>
+                    <div class="w-1/4 px-2">
+                        <label class="font-bold text-slate-700 text-md mb-4 block">출금 비밀번호 재확인</label>
+                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="출금 비밀번호를 다시 입력해주세요">
+                    </div>
+                </div>
+                <div class="px-2">
+                    <button class="text-white mr-2 font-medium p-2 px-4 rounded-md bg-primary w-36">회원가입</button>
+                </div>
+               
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
