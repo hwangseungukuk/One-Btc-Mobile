@@ -10,56 +10,49 @@
     <script src="tailwind.config.js"></script>
     
 </head>
-<body class="bg-main">
+<body class="bg-semiMain"  onload="GetSource()">
+    <div app-include-dom="./partials/navigation/navigation.html"></div>
+
     <div class="container mx-auto">
-        <div class="header">
-            <!-- Brand Icon -->
-            <div class="relative flex items-center mr-20 py-5 cursor-pointer w-80" onclick="location.href='index.html'">
-                <img class="w-20 mr-2" src="assets/images/icon/logo.png" alt="">
-                <h3 class="text-3xl font-black italic text-primary">ONE BTC</h3>
-            </div>
-        </div>
+        <div class="content mx-auto my-20 bg-white p-5 rounded-md border-1 border-slate-200 p-16" style="width: 600px">
 
-        <div class="content mx-auto mt-28" style="width: 500px">
-            <h2 class="text-4xl font-bold mb-3">LOGIN</h2>
-            <label class="text-link mb-5 block">로그인하는 사이트의 주소가 아래와 같은지 확인하세요.</label>
-            <div class="rounded-full bg-stone-800 text-center p-2 mb-5 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="css-1ouueae w-6">
-                    <path fill="#0ecb81" fill-rule="evenodd" clip-rule="evenodd" d="M7 8v2H5v11h14V10h-2V8A5 5 0 007 8zm7.5 2V8a2.5 2.5 0 00-5 0v2h5zm-1 8v-5h-3v5h3z" fill="currentColor"></path>
-                </svg>
-                <label class="text-white text-xs">주소 확인 : http://onebtc-world.com</label>
+            <div class="text-center mb-5">
+                <img class="w-40 m-auto mb-5" src="assets/images/icon/icon.svg" alt="">
+                <label class="font-medium text-link">COINBASE 로그인 후 다양한 혜택을 누리실 수 있습니다.</label>
             </div>
-            <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200">
-                <div class="flex mb-5">
-                    <div class="w-full px-2">
-                        <label class="font-bold text-slate-700 text-md mb-4 block">ID</label>
-                        <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="사용하실 비밀번호를 입력하세요">
-                    </div>
-                
-                </div>
-                <div class="flex mb-5">
-                    <div class="w-full px-2">
-                        <label class="font-bold text-slate-700 text-md mb-4 block">Password</label>
-                        <input type="password" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="사용하실 비밀번호를 입력하세요">
-                    </div>
-                </div>
-                
-                <div class="text-center mb-5">
-                    <label class="text-sm">아이디와 비밀번호를 입력 후 로그인하세요.</label>
-                </div>
+            <div class="w-full px-2 my-4">
+                <label class="font-bold text-slate-700 text-md mb-2 block">ID</label>
+                <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="아이디">
+            </div>
+            <div class="w-full px-2 my-4">
+                <label class="font-bold text-slate-700 text-md mb-2 block">Password</label>
+                <input type="password" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="비밀번호">
+            </div>
 
-                <div class="text-center">
-                    <button class="text-white mr-2 font-medium p-2 px-4 rounded-md bg-primary w-full">회원가입</button>
-                </div>
+            <div class="w-full px-2 my-5 ">
+                <button class="text-white mr-2 font-bold p-3 px-4 rounded-md bg-primary w-full" onclick="UserLogin()" >로그인</button>
+            </div>
 
-            
-            </div>
-            
-            <div class="text-left mb-5">
-                <label class="text-md font-medium block  text-primary my-2 cursor-pointer">비밀번호를 잊으셨나요?</label>
-                <label class="text-md font-medium block  text-primary my-2 cursor-pointer" onclick="location.href='register.html'">회원가입</label>
-            </div>
+            <ul class="flex justify-center items-center">
+                <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="location.href='register.html'">회원가입</li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold border-l-2 border-r-2 border-slate-200">아이디 찾기</li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold">비밀번호 찾기</li>
+            </ul>
+           
+        
         </div>
     </div>
+      
+    <iframe 
+    id="frame"
+    class="fixed bottom-0 bg-white z-40" 
+    scrolling="no" 
+    allowtransparency="true" 
+    frameborder="0"
+    style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+    <div app-include-dom="./partials/footer/footer.html"></div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
 </html>

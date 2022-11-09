@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One BTC Design Login Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/tailwind.js"></script>
+    <script src="tailwind.config.js"></script>
+    
+</head>
+<body class="bg-semiMain" onload="GetSource()">
+
+    <div app-include-dom="./partials/navigation/navigation.html"></div>
+
+    <div class="container mx-auto py-5">
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+            <h2 class="text-3xl text-link font-bold mb-10">고객센터</h2>
+          
+            <table class="text-center table-auto w-full text-sm">
+                <tbody>
+                    <tr class="border-t-2 border-primary">
+                        <th class="py-4 w-32 bg-slate-100">제목</th>
+                        <td class="text-left px-3 py-2">
+                            <input class="bg-slate-200 py-2 outline-primary/50 w-full p-2" />
+                        </td>
+                    
+                    </tr>
+                    <tr class="border-t-2 border-b-2 border-slate-200">
+                        <th class="py-4 w-32 bg-slate-100">제목</th>
+                        <td class="text-left px-3 py-2">
+                            <textarea class="bg-slate-200 py-2 outline-primary/50 w-full h-64 p-2" ></textarea>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+
+              <div class="text-center my-5">
+                <button class="text-white mr-2 font-bold p-4 px-8 rounded-md w-40 bg-primary" >문의하기</button>
+                <button class="text-white mr-2 font-bold p-4 px-8 rounded-md w-40 bg-slate-500" >취소</button>
+              </div>
+
+              
+            <table class="text-center table-auto w-full text-sm">
+                <thead>
+                  <tr class="border-t-2 border-primary">
+                    <th class="py-4">순번</th>
+                    <th class="py-4 text-left px-3">제목</th>
+                    <th class="py-4">상태</th>
+                    <th class="py-4">작성일</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>7</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>문의 테스트</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200  cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>6</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>전화좀 받아주세요</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>5</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>	마팀장 연락좀 해주라</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>4</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>계좌 문의</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>3</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>	계좌 문의</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                    
+                    <tr class="border-t-2 border-slate-200  cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>2</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>	계좌 문의</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+
+                                        
+                    <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>1</span>
+                        </td>
+                        <td class="py-3 px-3 text-left">
+                            <span>	111111</span>
+                        </td>
+                        <td class="py-3">
+                            <span>답변완료</span>
+                        </td>
+                        <td class="py-3">
+                            <span>2022/10/03</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>	문의 테스트<br>
+                                <br>
+                                전화좀 받아주세요
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div app-include-dom="./partials/footer/footer.html"></div>
+    <iframe 
+        id="frame"
+        class="fixed bottom-0 bg-white z-40" 
+        scrolling="no" 
+        allowtransparency="true" 
+        frameborder="0"
+        style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</html>

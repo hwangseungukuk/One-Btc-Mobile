@@ -10,34 +10,40 @@
     <script src="tailwind.config.js"></script>
 
 </head>
-<body class="bg-semiMain" onload="GetSource()">
+<body class="bg-semiMain"  onload="GetSource()">
     <div app-include-dom="./partials/navigation/navigation.html"></div>
 
     <div class="container m-auto">
         <div class="flex items-center w-full " style="height: 700px">
             <div class="w-6/12">
-                <h2 class="text-5xl text-slate-800 font-bold mb-5">Trade with <span class="italic text-primary font-black">ONE BTC</span>.</h2>
-                <h2 class="text-5xl text-slate-800 font-bold mb-5">자산을 안전하게 거래하세요</h2>
-                <h2 class="text-2xl text-slate-800 font-bold mb-10">빠르고 뛰어난 보안 거래를 통해 10+ 종목의 거래를 실현하십시오.</h2>
-              
-                <button class="text-white mr-2 font-bold p-2 px-4 rounded-md bg-primary w-36">지금 시작하기</button>
-                <button class="text-primary mr-2 font-bold p-2 px-4 rounded-md w-36 text-primary border-2 border-primary border-solid">로그인</button>
+                <h2 class="text-5xl text-slate-800 font-bold mb-5 flex items-center">Trade with 
+                    <img class="w-60 ml-5" src="assets/images/icon/icon.svg" alt="">
+                </h2>
+                <h2 class="text-4xl text-slate-800 font-bold mb-5">자산을 안전하게 거래하세요</h2>
+                <h2 class="text-2xl text-slate-800 font-bold mb-10">빠르고 뛰어난 보안거래를 통해 암호화폐 거래를 실현하십시오.</h2>
+                <div class="guest-block">
+                    <button class="text-white mr-2 font-bold p-2 px-4 rounded-md bg-primary w-36 border-2 border-primary">지금 시작하기</button>
+                    <button class="text-primary mr-2 font-bold p-2 px-4 rounded-md w-36 text-primary border-2 border-primary border-solid">로그인</button>
+                </div>
+          
             </div>
             <div>
-                <img src="assets/images/portfolio.png" alt="">
+                <img  src="assets/images/portfolio.png" alt="">
             </div>
         </div>
     </div>
     
     <iframe 
-        id="frame"
-        class="fixed bottom-0 bg-white z-40" 
-        scrolling="no" 
-        allowtransparency="true" 
-        frameborder="0"
-        style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+    id="frame"
+    class="fixed bottom-0 bg-white z-40" 
+    scrolling="no" 
+    allowtransparency="true" 
+    frameborder="0"
+    style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
     <div app-include-dom="./partials/footer/footer.html"></div>
     
 </body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
 </html>

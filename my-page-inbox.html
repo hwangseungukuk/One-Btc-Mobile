@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One BTC Design Login Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/tailwind.js"></script>
+    <script src="tailwind.config.js"></script>
+    
+</head>
+<body class="bg-semiMain" onload="GetSource()">
+
+    <div app-include-dom="./partials/navigation/navigation.html"></div>
+
+    <div class="container mx-auto py-5">
+        <div class="flex items-center my-5">
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"  onclick="location.href='trading.html'">나의 거래내역</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"  onclick="location.href='my-info.html'">회원정보</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary" onclick="location.href='my-page-inbox.html'" >메시지함</button>
+        </div>
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+            <h2 class="text-3xl text-link font-bold mb-10">받은 메시지</h2>
+
+            <table class="text-center table-auto w-full text-sm">
+                <thead>
+                  <tr class="border-t-2 border-slate-800">
+                    <th class="py-4">순번</th>
+                    <th class="py-4">제목</th>
+                    <th class="py-4">보낸시간</th>
+                    <th class="py-4">-</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t-2 border-slate-200 bg-semiMain cursor-pointer toogle-tab">
+                        <td class="py-3">
+                            <span>1</span>
+                        </td>
+                        <td class="py-3">
+                            <span>★★ 10월19일 NBA 개막기념 돌발 이벤트 진행 ★★</span>
+                        </td>
+                        <td class="py-3">
+                            <span>02/14 18:11</span>
+                        </td>
+                        <td class="py-3">
+                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2">삭제</button>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                        <td class="py-3" colspan="4">
+                            <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                <br>
+                                오 락 실 에 오신 것을 환영합니다 !<br>
+                                안녕하세요 회원님<br>
+                                <br>
+                                ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                <br>
+                                ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                <br>
+                                -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                <br>
+                                추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                <br>
+                                -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                <br>
+                                -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                <br>
+                                -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                <br>
+                                -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                <br>
+                                -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                <br>
+                                언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                <br>
+                                또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                <br>
+                                언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                <br>
+                                -오락실 운영팀 올림-
+                            </p>
+                        </td>
+                       
+                    </tr>
+  
+                </tbody>
+              </table>
+
+
+                <ul class="flex justify-center mt-10">
+                    <li class="flex items-center justify-center mx-1 cursor-pointer bg-primary text-white w-12 h-12 rounded-md">1</li>
+                    <li class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">2</li>
+                    <li class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">3</li>
+                </ul>
+        </div>
+    </div>
+
+
+
+    <div app-include-dom="./partials/footer/footer.html"></div>
+    <iframe 
+        id="frame"
+        class="fixed bottom-0 bg-white z-40" 
+        scrolling="no" 
+        allowtransparency="true" 
+        frameborder="0"
+        style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+</html>
