@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,35 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/tailwind.js"></script>
     <script src="tailwind.config.js"></script>
-    
+
 </head>
+
 <body class="bg-semiMain" onload="GetSource()">
 
     <div app-include-dom="./partials/navigation/navigation.html"></div>
 
     <div class="container mx-auto py-5">
         <div class="flex items-center my-5">
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"  onclick="location.href='trading.html'">나의 거래내역</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"  onclick="location.href='my-info.html'">회원정보</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary" onclick="location.href='my-page-inbox.html'" >메시지함</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='trading.html'">나의 거래내역</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='my-info.html'">내정보</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
+                onclick="location.href='my-page-inbox.html'">우편함</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='customer-service.html'">고객센터</button>
         </div>
         <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
             <h2 class="text-3xl text-link font-bold mb-10">받은 메시지</h2>
 
             <table class="text-center table-auto w-full text-sm">
                 <thead>
-                  <tr class="border-t-2 border-slate-800">
-                    <th class="py-4">순번</th>
-                    <th class="py-4">제목</th>
-                    <th class="py-4">보낸시간</th>
-                    <th class="py-4">-</th>
-                  </tr>
+                    <tr class="border-t-2 border-slate-800">
+                        <th class="py-4">순번</th>
+                        <th class="py-4">제목</th>
+                        <th class="py-4">보낸시간</th>
+                        <th class="py-4">-</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr class="border-t-2 border-slate-200 bg-semiMain cursor-pointer toogle-tab">
@@ -38,7 +45,7 @@
                             <span>1</span>
                         </td>
                         <td class="py-3">
-                            <span>★★ 10월19일 NBA 개막기념 돌발 이벤트 진행 ★★</span>
+                            <span>[중요] '코인베이스 로그인' 추가 관련 안내 및 유의사항 안내 (코인베이스 로그인 추가 안내)</span>
                         </td>
                         <td class="py-3">
                             <span>02/14 18:11</span>
@@ -47,67 +54,64 @@
                             <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2">삭제</button>
                         </td>
                     </tr>
-                    <tr class="border-t-2 border-slate-200 " style="display: none;">
+                    <tr class="border-t-2 border-slate-200 text-left" style="display: none;">
                         <td class="py-3" colspan="4">
-                            <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
-                                <br>
-                                오 락 실 에 오신 것을 환영합니다 !<br>
-                                안녕하세요 회원님<br>
-                                <br>
-                                ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
-                                <br>
-                                ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
-                                <br>
-                                -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
-                                <br>
-                                추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
-                                <br>
-                                -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
-                                <br>
-                                -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
-                                <br>
-                                -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
-                                <br>
-                                -카지노 입금 보너스는 추가 적용되지않습니다.<br>
-                                <br>
-                                -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
-                                <br>
-                                언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
-                                <br>
-                                또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
-                                <br>
-                                언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
-                                <br>
-                                -오락실 운영팀 올림-
+                            <p class="mb-3">안녕하세요. 가장 신뢰받는 글로벌 표준 디지털 자산 거래소 코인베이스입니다.</p>
+                            <p class="mb-3">2022년 10월 31일 신규 로그인 기능으로 '코인베이스 로그인'이 추가됩니다.<br>
+                                '코인베이스 로그인' 기능이 포함된 업데이트는 앱 배포 환경 안정성 여부를 고려하여 <em>약 일주일에 걸쳐 점진적으로 배포가 진행될
+                                    예정입니다.</em><br>
+                                신규 로그인 기능이 확인되지 않는 경우, 기존 이용하고 계신 소셜 로그인을 통해 코인베이스 서비스를 이용해주시기 바랍니다.</p>
+                            <p class="mb-3"><a href="#" rel="noopener noreferrer" target="_blank">→ 코인베이스 로그인 이용자 가이드 바로
+                                    가기</a><br>
+                                <a href="#" rel="noopener noreferrer" target="_blank">→ 코인베이스 로그인 자주하는 질문 바로 가기</a>
                             </p>
+                            <p class="mb-3"><strong>[유의 사항]</strong></p>
+                            <ul class="list-disc pl-8">
+                                <li><strong>'코인베이스 로그인' 서비스는 안드로이드 모바일앱 버전 1.19.1, 아이폰 모바일앱 버전 1.26.24 이상에서만 이용 가능합니다.
+                                        점진적인 배포로 인하여 이용자에 따라 앱 업데이트 확인이 불가할 수 있으며, 배포가 진행됨에 따라 업데이트가 가능합니다.</strong>
+                                </li>
+                                <li>은행 서버 점검 시간에는 계좌 인증을 통한 '코인베이스 로그인' 진행이 불가능합니다. 대체 인증 수단(2채널 인증)을 통해 진행해주시기 바랍니다.
+                                </li>
+                                <li>점진 배포 일정은 배포 상황에 따라 상기 안내드린 약 일주일보다 빠르거나 늦어질 수 있습니다.</li>
+                                <li>점진적으로 배포가 진행됨에 따라 한시적으로 소셜 로그인을 통한 회원 가입이 가능합니다. 앱 배포 환경 안정성이 확인되어 배포가 완료되는 경우 기안내드린
+                                    바와 같이 소셜 로그인 방식을 통한 신규 회원가입이 불가능합니다.</li>
+                                <li>기존 공지에서 안내드린 대로 11월 21일 이후 소셜 로그인을 통한 코인베이스 이용이 불가능합니다. 코인베이스 서비스 사용 제한 환경 등 유의사항을
+                                    필히 확인
+                                    부탁드립니다.</li>
+                                <li>코인베이스 로그인을 진행하신 경우, 기존 소셜 로그인 방식으로 로그인 되어 있는 본인의 실명인증이 완료된 계정이 모두 로그아웃되며 소셜 로그인
+                                    방식으로의
+                                    로그인이 불가능합니다.</li>
+                            </ul>
                         </td>
-                       
+
                     </tr>
-  
+
                 </tbody>
-              </table>
+            </table>
 
 
-                <ul class="flex justify-center mt-10">
-                    <li class="flex items-center justify-center mx-1 cursor-pointer bg-primary text-white w-12 h-12 rounded-md">1</li>
-                    <li class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">2</li>
-                    <li class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">3</li>
-                </ul>
+            <ul class="flex justify-center mt-10">
+                <li
+                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary text-white w-12 h-12 rounded-md">
+                    1</li>
+                <li
+                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">
+                    2</li>
+                <li
+                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">
+                    3</li>
+            </ul>
         </div>
     </div>
 
 
 
     <div app-include-dom="./partials/footer/footer.html"></div>
-    <iframe 
-        id="frame"
-        class="fixed bottom-0 bg-white z-40" 
-        scrolling="no" 
-        allowtransparency="true" 
-        frameborder="0"
+    <iframe id="frame" class="fixed bottom-0 bg-white z-40" scrolling="no" allowtransparency="true" frameborder="0"
         style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
+
 </html>

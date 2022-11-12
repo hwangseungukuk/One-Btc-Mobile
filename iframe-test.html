@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe onload="ChangeIntervalHandler()" id="chart-frame"
+        src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_6be5c&symbol=COINBASE:ETHUSD&interval=1&hidesidetoolbar=0&symboledit=1&saveimage=1&toolbarbg=F1F3F6&studies=%5B%5D&hideideas=1&theme=Light&style=1&timezone=Etc%2FUTC&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=en&utm_source=coinmarketcap.com&utm_medium=widget&utm_campaign=chart&utm_term=BTCUSDT"
+        frameborder="0" style="height: 100vh; width : 100vw"></iframe>
+</body>
+<script>
+    const ChangeIntervalHandler = () => {
+        console.log(document.getElementById('chart-frame'))
+        document.getElementById('chart-frame').contentWindow.document.getElementsByClassName("value-Os5mxnuv").click();
+    }
+</script>
+
+</html>
