@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One BTC Design Login Page</title>
+    <title>ETH USD</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/tailwind.js"></script>
     <script src="tailwind.config.js"></script>
-
 </head>
+
 
 <body class="bg-semiMain" onload="GetSource()">
 
@@ -18,19 +18,77 @@
 
     <div class="container mx-auto py-5">
         <div class="flex items-center my-5">
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='Frame-BTCUSD.html'">BTC/USD 투자</button>
             <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
-                onclick="location.href='trading.html'">나의 거래내역</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='my-info.html'">내정보</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='my-page-inbox.html'">우편함</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='customer-service.html'">고객센터</button>
+                onclick="location.href='Frame-ETHUSD.html'">ETH/USD 투자</button>
         </div>
-        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
-            <h2 class="text-3xl text-link font-bold mb-10">나의 거래내역</h2>
+        <div class="w-full bg-white rounded-md border-1 border-slate-200 p-2">
+          <div class="flex">
+            <div class="w-2/3 p-2">
+                <iframe 
+                    src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_6be5c&symbol=COINBASE:ETHUSD&interval=1&hidesidetoolbar=0&symboledit=1&saveimage=1&toolbarbg=F1F3F6&studies=%5B%5D&hideideas=1&theme=Light&style=1&timezone=Etc%2FUTC&studies_overrides=%7B%7D&overrides=%7B%7D&enabled_features=%5B%5D&disabled_features=%5B%5D&locale=en&utm_source=coinmarketcap.com&utm_medium=widget&utm_campaign=chart&utm_term=BTCUSDT" 
+                    style="width: 100%; height : 443px" 
+                    frameborder="0"></iframe>
+            </div>
+            
+            <div class="w-1/3 p-2">
+                <div class="py-3 text-center bg-slate-500 text-white">
+                    <label>ace001님</label>
+                </div>
+                <div class="text-center flex">
+                    <div class="w-2/4 border-2 border-slate-200 py-3 border-r-0 font-bold">보유 보증금</div>
+                    <div class="w-2/4 border-2 border-slate-200 py-3 font-bold">999,999,999 원</div>
+                </div>
+                <div class="text-center flex bg-slate-800 text-white items-center">
+                    <div class="w-3/4 border-r-0 p-2 pl-2  font-bold pr-0">
+                        <input type="text" class="w-full p-3 bg-slate-700 focus:outline-none" placeholder="직접입력">
+                    </div>
+                    <div class="w-1/4  font-bold px-2">
+                        <button class="py-3 bg-slate-500  w-full">초기화</button>
+                    </div>
+                </div>
+                <div class="text-center flex bg-slate-800 pb-2 px-2 text-white items-center">
+                    <div class="w-1/3  ">
+                        <button class="py-3 bg-slate-500 py-6 w-full rounded-md border-2 border-slate-600 ">10,000 <br> (Lot)</button>
+                    </div>
+                    <div class="w-1/3  px-2">
+                       <button class="py-3 bg-slate-500 py-6 w-full rounded-md border-2 border-slate-600 ">100,000 <br> (Lot)</button>
+                    </div>
+                    <div class="w-1/3 ">
+                       <button class="py-3 bg-slate-500 py-6 w-full rounded-md border-2 border-slate-600 ">500,000 <br> (Lot)</button>
+                    </div>
+                </div>
+                <div class="text-center flex bg-slate-800 pb-2 px-2 text-white items-center">
+                    <div class="w-1/3  ">
+                        <button class="py-3 bg-slate-500 py-6 w-full rounded-md border-2 border-slate-600 ">1,000,000 <br> (Lot)</button>
+                    </div>
+                    <div class="w-1/3  px-2">
+                       <button class="py-3 bg-slate-500 py-6 w-full rounded-md border-2 border-slate-600 ">10,000,000<br>(Lot)</button>
+                    </div>
+                    <div class="w-1/3 ">
+                       <button class="py-3 bg-slate-500 py-6 w-full rounded-md border-2 border-slate-600 ">100,000,000 <br>(Lot)</button>
+                    </div>
+                </div>
+                <div class="text-center flex bg-slate-800 pb-2 px-2 text-white items-center">
+                    <div class="w-3/6 font-bold pr-1">
+                        <button class="py-3 bg-red-500 rounded-sm  py-4 w-full" onclick="ToogleModal('#popup-red')">매수신청</button>
+                    </div>
+                    <div class="w-3/6 font-bold pl-1">
+                       <button class="py-3 bg-green-500 rounded-sm py-4  w-full"  onclick="ToogleModal('#popup-green')">매도신청</button>
+                    </div>
+                </div>
 
-            <span class="text-primary font-bold mb-5 block">전체 3건이 검색되었습니다.</span>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="bg-slate-500 p-3 text-white mt-5">
+            나의 ETH/USD 2분 거래 투자내역
+        </div>
+        <div class="bg-white p-5">
             <table class="text-center table-auto w-full text-sm">
                 <thead>
                     <tr class="border-t-2 border-slate-800">
@@ -115,24 +173,14 @@
                     </tr>
                 </tbody>
             </table>
-
-
-            <ul class="flex justify-center mt-10">
-                <li
-                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary text-white w-12 h-12 rounded-md">
-                    1</li>
-                <li
-                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">
-                    2</li>
-                <li
-                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">
-                    3</li>
-            </ul>
         </div>
+
+
     </div>
 
 
-
+    <div app-include-dom="./partials/modal/confirm-red.html"></div>
+    <div app-include-dom="./partials/modal/confirm-green.html"></div>
     <div app-include-dom="./partials/footer/footer.html"></div>
     <iframe id="frame" class="fixed bottom-0 bg-white z-40" scrolling="no" allowtransparency="true" frameborder="0"
         style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
@@ -140,5 +188,4 @@
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
-
 </html>

@@ -79,3 +79,11 @@ $(document).ready(function() {
 $('.toogle-tab').click(function() {
   $(this).next().toggle();
 })
+
+const ToogleModal = (id) => {
+  $(id).parent().toggle();
+}
+
+const closeSiteModal = () => {
+  $('.site-modal').parent().hide();
+}

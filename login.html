@@ -35,8 +35,8 @@
 
             <ul class="flex justify-center items-center">
                 <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="location.href='register.html'">회원가입</li>
-                <li class="px-4 text-sm text-link cursor-pointer font-bold border-l-2 border-r-2 border-slate-200">아이디 찾기</li>
-                <li class="px-4 text-sm text-link cursor-pointer font-bold">비밀번호 찾기</li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold border-l-2 border-r-2 border-slate-200" onclick="ToogleModal('#find-id')">아이디 찾기</li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="ToogleModal('#find-password')">비밀번호 찾기</li>
             </ul>
            
         
@@ -50,6 +50,9 @@
     allowtransparency="true" 
     frameborder="0"
     style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+
+    <div app-include-dom="./partials/modal/find-id.html"></div>
+    <div app-include-dom="./partials/modal/find-password.html"></div>
     <div app-include-dom="./partials/footer/footer.html"></div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
