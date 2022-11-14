@@ -17,45 +17,64 @@
     <div app-include-dom="./partials/navigation/navigation.html"></div>
 
     <div class="container mx-auto py-5">
-        <div class="flex items-center my-5">
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+
+        <div class=" items-center my-5">
+            <div class="flex p-1">
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='trading.html'">나의 거래내역</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
-                onclick="location.href='my-info.html'">내정보</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary"
+                    onclick="location.href='my-info.html'">내정보</button>
+            </div>
+            <div class="flex p-1">
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='my-page-inbox.html'">우편함</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='customer-service.html'">고객센터</button>
+            </div>
+         
         </div>
-        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-5 py-10">
             <h2 class="text-3xl text-link font-bold mb-10">회원정보</h2>
 
 
             <table class="text-center table-auto w-full text-sm">
                 <tbody>
-                    <tr class="border-t-2 border-primary/50">
+                    <tr class="block border-t-2 border-primary/50">
                         <th class="py-4 w-32 bg-slate-100">아이디</th>
                         <td class="text-left px-3">ace001</td>
+                       
+                    </tr>
+                    <tr class="block border-t-2 border-slate-200">
                         <th class="py-4 w-32 bg-slate-100">이름</th>
                         <td class="text-left px-3">최팀장</td>
                     </tr>
-                    <tr class="border-t-2 border-slate-200">
+                    <tr class="block border-t-2 border-slate-200">
                         <th class="py-4 w-32 bg-slate-100">휴대폰번호</th>
                         <td class="text-left px-3">0</td>
+                    </tr>
+                    <tr class="block border-t-2 border-slate-200">
                         <th class="py-4 w-32 bg-slate-100">지점코드</th>
                         <td class="text-left px-3">-</td>
                     </tr>
-                    <tr class="border-t-2 border-slate-200">
+                    <tr class="block border-t-2 border-slate-200">
                         <th class="py-4 w-32 bg-slate-100">은행명</th>
                         <td class="text-left px-3">농협중앙(011)</td>
+                    </tr>
+
+                    <tr class="block border-t-2 border-slate-200">
+                        
                         <th class="py-4 w-32 bg-slate-100">계좌번호</th>
                         <td class="text-left px-3">0</td>
                     </tr>
-                    <tr class="border-t-2 border-slate-200 border-b-2">
+                    <tr class="block border-t-2 border-slate-200">
                         <th class="py-4 w-32 bg-slate-100">비밀번호</th>
                         <td class="text-left px-3">
                             <input class="bg-slate-200 py-2 outline-primary" />
                         </td>
+                    </tr>
+                    <tr class="block border-t-2 border-slate-200 border-b-2">
+                      
                         <th class="py-4 w-32 bg-slate-100">비밀번호 확인</th>
                         <td class="text-left px-3">
                             <input class="bg-slate-200 py-2 outline-primary" />

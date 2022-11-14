@@ -87,3 +87,15 @@ const ToogleModal = (id) => {
 const closeSiteModal = () => {
   $('.site-modal').parent().hide();
 }
+
+const OpenSidebar = () => {
+  $('.sidebar').css('left' , '0');
+}
+
+const CloseSidebar = () => {
+  $('.sidebar').css('left' , '-100%');
+}
+
+const ShowRecordTable = (elem) => {
+  $(elem).parent().find('.record-table').toggle();
+}

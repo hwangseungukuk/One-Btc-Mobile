@@ -16,24 +16,32 @@
 
     <div app-include-dom="./partials/navigation/navigation.html"></div>
 
-    <div class="container mx-auto py-5">
-        <div class="flex items-center my-5">
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+    <div class="container mx-auto py-0">
+
+
+        <div class=" items-center my-5">
+            <div class="flex p-1">
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='trading.html'">나의 거래내역</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='my-info.html'">내정보</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                    onclick="location.href='my-info.html'">내정보</button>
+            </div>
+            <div class="flex p-1">
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary"
                 onclick="location.href='my-page-inbox.html'">우편함</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='customer-service.html'">고객센터</button>
+            </div>
+         
         </div>
-        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+
+
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-5 py-10">
             <h2 class="text-3xl text-link font-bold mb-10">받은 메시지</h2>
 
             <table class="text-center table-auto w-full text-sm">
                 <thead>
                     <tr class="border-t-2 border-slate-800">
-                        <th class="py-4">순번</th>
                         <th class="py-4">제목</th>
                         <th class="py-4">보낸시간</th>
                         <th class="py-4">-</th>
@@ -41,14 +49,11 @@
                 </thead>
                 <tbody>
                     <tr class="border-t-2 border-slate-200 bg-semiMain cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>1</span>
+                        <td class="py-3 w-1/2 px-2">
+                            <span class="block truncate text-clip overflow-hidden w-56 text-xs">[중요] '코인베이스 로그인' 추가 관련 안내 및 유의사항 안내 (코인베이스 로그인 추가 안내)</span>
                         </td>
                         <td class="py-3">
-                            <span>[중요] '코인베이스 로그인' 추가 관련 안내 및 유의사항 안내 (코인베이스 로그인 추가 안내)</span>
-                        </td>
-                        <td class="py-3">
-                            <span>02/14 18:11</span>
+                            <span class="text-xs">02/14 <br> 18:11</span>
                         </td>
                         <td class="py-3">
                             <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2">삭제</button>

@@ -16,19 +16,26 @@
 
     <div app-include-dom="./partials/navigation/navigation.html"></div>
 
-    <div class="container mx-auto py-5">
-        <div class="flex items-center my-5">
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+    <div class="container mx-auto py-0">
+
+        <div class=" items-center my-5">
+            <div class="flex p-1">
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='trading.html'">나의 거래내역</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='my-info.html'">내정보</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                    onclick="location.href='my-info.html'">내정보</button>
+            </div>
+            <div class="flex p-1">
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                 onclick="location.href='my-page-inbox.html'">우편함</button>
-            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
+                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary"
                 onclick="location.href='customer-service.html'">고객센터</button>
+            </div>
+         
         </div>
 
-        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-5 py-10">
             <h2 class="text-3xl text-link font-bold mb-10">고객센터</h2>
 
             <table class="text-center table-auto w-full text-sm">
@@ -50,15 +57,14 @@
             </table>
 
             <div class="text-center my-5">
-                <button class="text-white mr-2 font-bold p-4 px-8 rounded-md w-40 bg-primary">문의하기</button>
-                <button class="text-white mr-2 font-bold p-4 px-8 rounded-md w-40 bg-slate-500">취소</button>
+                <button class="text-white  text-sm mr-2 font-bold p-3 px-8 rounded-md w-40 bg-primary">문의하기</button>
+                <button class="text-white  text-sm mr-2 font-bold p-3 px-8 rounded-md w-40 bg-slate-500">취소</button>
             </div>
 
 
             <table class="text-center table-auto w-full text-sm">
                 <thead>
                     <tr class="border-t-2 border-primary">
-                        <th class="py-4">순번</th>
                         <th class="py-4 text-left px-3">제목</th>
                         <th class="py-4">상태</th>
                         <th class="py-4">작성일</th>
@@ -66,9 +72,6 @@
                 </thead>
                 <tbody>
                     <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>7</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span>문의 테스트</span>
                         </td>
@@ -76,7 +79,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">
@@ -89,9 +92,6 @@
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200  cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>6</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span>전화좀 받아주세요</span>
                         </td>
@@ -99,7 +99,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">
@@ -112,9 +112,6 @@
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>5</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span> 마팀장 연락좀 해주라</span>
                         </td>
@@ -122,7 +119,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">
@@ -135,9 +132,6 @@
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>4</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span>계좌 문의</span>
                         </td>
@@ -145,7 +139,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">
@@ -158,9 +152,6 @@
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>3</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span> 계좌 문의</span>
                         </td>
@@ -168,7 +159,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">
@@ -182,9 +173,6 @@
                     </tr>
 
                     <tr class="border-t-2 border-slate-200  cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>2</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span> 계좌 문의</span>
                         </td>
@@ -192,7 +180,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">
@@ -207,9 +195,6 @@
 
 
                     <tr class="border-t-2 border-slate-200 bg-slate-100 cursor-pointer toogle-tab">
-                        <td class="py-3">
-                            <span>1</span>
-                        </td>
                         <td class="py-3 px-3 text-left">
                             <span> 111111</span>
                         </td>
@@ -217,7 +202,7 @@
                             <span>답변완료</span>
                         </td>
                         <td class="py-3">
-                            <span>2022/10/03</span>
+                            <span>10/03</span>
                         </td>
                     </tr>
                     <tr class="border-t-2 border-slate-200 " style="display: none;">

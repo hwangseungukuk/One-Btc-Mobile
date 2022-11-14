@@ -1,23 +1,46 @@
-<div class="w-full bg-main ">
-    <div class="container m-auto flex items-center">
-
+<div class="w-full bg-main">
+    <div class="container m-auto flex items-center justify-between px-5">
         <!-- Brand Icon -->
-        <div class="relative flex items-center mr-10 py-5 cursor-pointer" onclick="location.href='index.html'">
+        <div class="relative flex items-center py-5 cursor-pointer" onclick="location.href='index.html'">
             <img class="w-40" src="assets/images/icon/icon.svg" alt="">
         </div>
+            <!-- Brand Icon -->
+        <div class="relative flex items-center py-5 cursor-pointer" onclick="OpenSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <line x1="4" y1="6" x2="20" y2="6"></line>
+                <line x1="4" y1="12" x2="20" y2="12"></line>
+                <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+        </div>
+    </div>
+</div>
 
-        <!-- Menu Lists -->
-        <div class="flex text-link " style="height: 100px">
 
-            <div class="mr-5 relative  drop-parent">
-                <label class="font-bold flex items-center cursor-pointer">
-                    <span>투자하기</span>
-                    <img class="ml-2 w-6" src="assets/images/icon/caret-down.svg" alt="">
-                </label>
-                <div class="drop-menu w-80 p-4 absolute bg-main top-16 left-0 text-slate-300" style="display: none;">
-                    <div class="child-drop-menu relative py-3 cursor-pointer" onclick="location.href='Frame-BTCUSD.html'">
-                        <span class="mb-1 block font-bold text-slate-800 title">BTC/USD 투자</span>
-                        <span class="text-sm text-slate-500 font-medium">ONE BTC의 새로운 보안시스템</span>
+<div class="sidebar pb-20">
+    <div class="container mx-auto">
+        <div class="container m-auto flex items-center justify-between px-5 sticky top-0 bg-white z-40">
+            <!-- Brand Icon -->
+            <div class="relative flex items-center py-5 cursor-pointer" onclick="location.href='index.html'">
+                <img class="w-40" src="assets/images/icon/icon.svg" alt="">
+            </div>
+                <!-- Brand Icon -->
+            <div class="relative flex items-center py-5 cursor-pointer " onclick="CloseSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </div>
+        </div>
+
+        <ul class="p-5 text-2xl font-bold text-slate-500">
+            <li class="py-2">
+                <label class="text-lg mb-2 bg-main rounded-md border-2 border-slate-100 text-primary px-4 py-2 block" onclick="location.href='Frame-BTCUSD.html'">투자하기</label>
+                <div class="drop-menu w-full  p-4 top-16 left-0 text-slate-300">
+                    <div class="mb-2 child-drop-menu relative cursor-pointer" onclick="location.href='Frame-BTCUSD.html'">
+                        <span class=" text-sm block font-bold text-slate-500 ">BTC/USD 투자</span>
+                        <span class="text-xs text-slate-500 font-medium">ONE BTC의 새로운 보안시스템</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -30,9 +53,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="child-drop-menu relative py-3 cursor-pointer" onclick="location.href='Frame-ETHUSD.html'">
-                        <span class=" mb-1 block font-bold text-slate-800 title">ETH/USD 투자</span>
-                        <span class="text-sm text-slate-500 font-medium">ONE BTC에는 어떤 장점이 있는지 알아보세요</span>
+                    <div class="mb-2 child-drop-menu relative cursor-pointer" onclick="location.href='Frame-ETHUSD.html'">
+                        <span class=" text-sm  block font-bold text-slate-500 ">ETH/USD 투자</span>
+                        <span class="text-xs text-slate-500 font-medium">ONE BTC에는 어떤 장점이 있는지 알아보세요</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -46,23 +69,17 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </li>
+            <li class="py-2"  onclick="location.href='coinbase.html'">
+                <label class="text-lg mb-2  bg-main rounded-md border-2 border-slate-100 text-primary px-4 py-2 block">소개</label>
+            </li>
 
-            <div class="mr-5 relative  drop-parent" onclick="location.href='coinbase.html'">
-                <label class="font-bold flex items-center cursor-pointer mx-5">
-                    <span>소개</span>
-                </label>
-            </div>
-
-            <div class="mr-5 relative  drop-parent">
-                <label class="font-bold flex items-center cursor-pointer">
-                    <span>원화 입출금</span>
-                    <img class="ml-2 w-6" src="assets/images/icon/caret-down.svg" alt="">
-                </label>
-                <div class="drop-menu w-80 p-4 absolute bg-main top-16 left-0 text-slate-300" style="display: none;">
-                    <div class="child-drop-menu relative py-3 cursor-pointer">
-                        <span class="mb-1 block font-bold text-slate-800 title">원화입금</span>
-                        <span class="text-sm text-slate-500 font-medium">쉬운 방법으로 간편한 원화 입금</span>
+            <li class="py-2">
+                <label class="text-lg mb-2 bg-main rounded-md border-2 border-slate-100 text-primary px-4 py-2 block"> 원화 입출금</label>
+                <div class="drop-menu w-full  p-4 top-16 left-0 text-slate-300">
+                    <div class="mb-2 child-drop-menu relative cursor-pointer" onclick="location.href='Frame-BTCUSD.html'">
+                        <span class=" text-sm block font-bold text-slate-500 ">원화입금</span>
+                        <span class="text-xs text-slate-500 font-medium">쉬운 방법으로 간편한 원화 입금</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -75,9 +92,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="child-drop-menu relative py-3 cursor-pointer">
-                        <span class=" mb-1 block font-bold text-slate-800 title">원화출금</span>
-                        <span class="text-sm text-slate-500 font-medium">간편하고 쉽게 즉시 출금받기</span>
+                    <div class="mb-2 child-drop-menu relative cursor-pointer" onclick="location.href='Frame-ETHUSD.html'">
+                        <span class=" text-sm  block font-bold text-slate-500 ">원화출금</span>
+                        <span class="text-xs text-slate-500 font-medium">간편하고 쉽게 즉시 출금받기</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -90,9 +107,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="child-drop-menu relative py-3 cursor-pointer">
-                        <span class=" mb-1 block font-bold text-slate-800 title">입출금 내역조회</span>
-                        <span class="text-sm text-slate-500 font-medium">간편하게 입출금 내역 조회하기</span>
+                    <div class="mb-2 child-drop-menu relative cursor-pointer" onclick="location.href='Frame-ETHUSD.html'">
+                        <span class=" text-sm  block font-bold text-slate-500 ">입출금 내역조회</span>
+                        <span class="text-xs text-slate-500 font-medium">간편하게 입출금 내역 조회하기</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -106,18 +123,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
-
-            <div class="mr-5 relative  drop-parent">
-                <label class="font-bold flex items-center cursor-pointer">
-                    <span>고객지원</span>
-                    <img class="ml-2 w-6" src="assets/images/icon/caret-down.svg" alt="">
-                </label>
-                <div class="drop-menu w-80 p-4 absolute bg-main top-16 left-0 text-slate-300" style="display: none;">
-                    <div class="child-drop-menu relative py-3 cursor-pointer" onclick="location.href='trading.html'">
-                        <span class="mb-1 block font-bold text-slate-800 title">나의 거래내역</span>
-                        <span class="text-sm text-slate-500 font-medium">자주 묻는 질문</span>
+            </li>
+            <li class="py-2">
+                <label class="text-lg mb-2 bg-main rounded-md border-2 border-slate-100 text-primary px-4 py-2 block" onclick="location.href='trading.html'">고객지원            </label>
+                <div class="drop-menu w-full  p-4 top-16 left-0 text-slate-300">
+                    <div class="child-drop-menu relative cursor-pointer" onclick="location.href='trading.html'">
+                        <span class="text-sm mb-1 block font-bold text-slate-500 title">나의 거래내역</span>
+                        <span class="text-xs text-slate-500 font-medium">자주 묻는 질문</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -130,9 +142,9 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="child-drop-menu relative py-3 cursor-pointer" onclick="location.href='my-info.html'">
-                        <span class=" mb-1 block font-bold text-slate-800 title">내정보</span>
-                        <span class="text-sm text-slate-500 font-medium">내 정보를 확인하세요</span>
+                    <div class="child-drop-menu relative cursor-pointer" onclick="location.href='my-info.html'">
+                        <span class=" text-sm mb-1 block font-bold text-slate-500 title">내정보</span>
+                        <span class="text-xs text-slate-500 font-medium">내 정보를 확인하세요</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -145,10 +157,10 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="child-drop-menu relative py-3 cursor-pointer"
+                    <div class="child-drop-menu relative cursor-pointer"
                         onclick="location.href='my-page-inbox.html'">
-                        <span class=" mb-1 block font-bold text-slate-800 title">우편함</span>
-                        <span class="text-sm text-slate-500 font-medium">중요한 정보를 확인</span>
+                        <span class=" text-sm mb-1 block font-bold text-slate-500 title">우편함</span>
+                        <span class="text-xs text-slate-500 font-medium">중요한 정보를 확인</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -161,10 +173,10 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="child-drop-menu relative py-3 cursor-pointer"
+                    <div class="child-drop-menu relative cursor-pointer"
                         onclick="location.href='customer-service.html'">
-                        <span class=" mb-1 block font-bold text-slate-800 title">고객센터</span>
-                        <span class="text-sm text-slate-500 font-medium">궁금한 사항을 확인하세요 <br /> 상담사가 대기중입니다.</span>
+                        <span class=" text-sm block font-bold text-slate-500 title">고객센터</span>
+                        <span class="text-xs text-slate-500 font-medium">궁금한 사항을 확인하세요 <br /> 상담사가 대기중입니다.</span>
                         <div class="arrow-right">
                             <svg xmlns="http://www.w3.org/2000/svg"
                                 class="icon icon-tabler icon-tabler-arrow-narrow-right" width="24" height="24"
@@ -177,27 +189,8 @@
                             </svg>
                         </div>
                     </div>
-
-
                 </div>
-            </div>
-
-        </div>
-
-        <!-- Credentials Section -->
-        <div class="ml-auto user-block" style="display: none;">
-            <label class="mr-3 font-bold text-primary">
-                <span class="text-link">보유 보증금 :</span> 390,570,704원
-            </label>
-            <button class="text-white mr-2 font-bold p-2 px-4 rounded-md bg-primary"
-                onclick="UserLogout()">로그아웃</button>
-        </div>
-
-        <div class="ml-auto guest-block">
-            <button class="text-black mr-2 font-bold p-2 px-4" onclick="location.href='login.html'">로그인</button>
-            <button class="text-white mr-2 font-bold p-2 px-4 rounded-md bg-primary"
-                onclick="location.href='register.html'">회원가입</button>
-        </div>
-
+            </li>
+        </ul>
     </div>
 </div>
