@@ -8,6 +8,12 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+.custom-design li {
+    padding-top: 25px;
+    padding-left: 23px;
+    background: url(../images/icon/bulet.png) no-repeat 0 27px;
+}
+
 .border-1 {
     border-width: 1px;
 }
