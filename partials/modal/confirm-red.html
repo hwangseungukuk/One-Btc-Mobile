@@ -1,18 +1,64 @@
-<div class="fixed left-0 top-0 w-full h-screen bg-slate-500/50 flex items-center justify-center" style="display: none;">
-    <div id="popup-red" tabindex="-1" class=" overflow-y-auto overflow-x-hidden  z-50 md:inset-0 h-modal site-modal ">
-        <div class="relative p-4 w-full max-w-md h-full md:h-auto">
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
-                <button onclick="closeSiteModal()" type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="popup-modal">
-                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+<style>
+    .center-popup {
+        transform: translate(-50% , -50%);
+        top: 50%;
+        left: 50%;
+    }
+</style>
+<div class="fixed left-0 top-0 w-full h-screen bg-slate-500/50 flex items-center justify-center z-50 " style="display: none;">
+    <div id="popup-red" tabindex="-1" class=" overflow-y-auto overflow-x-hidden  z-50 md:inset-0 h-modal site-modal " style=" overflow-y: scroll; height: 100vh;">
+        <div class="relative p-4 w-full max-w-md h-full md:h-auto bg-white">
+            <div class="relative bg-white rounded-lg  " style="height: 95vh; overflow-y : scroll">
+                <button onclick="closeSiteModal()" type="button" class="fixed top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="popup-modal">
+                    <svg aria-hidden="true" class="w-10 h-10" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                     <span class="sr-only"  >Close modal</span>
                 </button>
                 <div class="p-6 text-center">
-                    <svg aria-hidden="true" class="mx-auto mb-4 w-14 h-14 text-gray-400 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Are you sure you want to bet on this price ?</h3>
+                    <div class="mt-5 mb-2">
+                        <div class="py-5 w-full text-left bg-red-300/20 p-3 rounded border-2 border-red-500/20">
+                            <img class="w-40 mb-4" src="assets/images/icon/icon.svg" alt="">
+                            <label class="block text-xl font-bold text-slate-500 mb-1">손익분배계약서</label>
+                            <label class="block text-sm font-bold text-slate-500">
+                                금융투자상품(BTCUSD) 투자자(당사)의 손권 조건 부
+                                <br>
+                                손의 분배 계시
+                            </label>
+                        </div>
+                    </div>
+                    <div class="text-center text-slate-500 py-5 w-full text-left bg-slate-300/20 p-3 rounded border-2 border-slate-500/20 mb-2">
+                        <h3 class="font-bold text-lg">2022년 11월 14일 14시 42분</h3>
+                        <h4 class="font-bold text-4xl text-red-500">0</h4>
+                        <hr class="my-2">
+                        <p class="text-sm">(kor) 5,000 * 0 / \10,000 * 0</p>
+                        <p class="text-sm">(kor) 50,000 * 0 / \10,000 * 0</p>
+                    </div>
+
+                    <div class="p-2">
+                    
+                        <div class="text-left text-slate-900 text-sm ">
+                            <p class="mb-2 font-normal">- BTC/USD 암호화폐 시세차익거래 손익분배 계약 보증금은 차손발생시 귀속되는 계약입니다.</p>
+                            <p class="mb-4 font-normal">- BTC/USD 계약을 취득하기 전에 반드시 이용약관 및 설명서를 읽어보시고 계약하시기 바람니다.</p>
+
+                            <div class=" flex items-center justify-center border-2 border-slate-500/20 p-2 px-5 mx-auto rounded-md text-lg  mb-4 font-thin" style="width: 80%">
+                                거래 가능시간 : <span class="font-bold text-black ml-1"> 00:00 </span>
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-2 font-normal"><span class="text-red-500 font-bold">"매수신청"</span> 버튼 클릭시 거래가 진행 됩니다.</p>
+                                <p class="mb-2 font-normal">프린트하기 공동투자 및 금융투자상품 암호화폐 </p>
+                                <p class="mb-2 font-normal">(BTC/USD) 포지션에서 실시간 발생되는 +1 Lot 실현시</p>
+                                <p class="mb-2 font-normal">(손익분배 를 12%) 차익지급 종료 실러시 차손소형종료</p>
+                                <p class="mb-2 font-normal">되는 약정입니다.</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+
+                    <hr class="my-2">
                     <button onclick="closeSiteModal()" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center mr-2">
-                        Yes, I'm sure
+                        매수신청
                     </button>
-                    <button onclick="closeSiteModal()" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">No, cancel</button>
+                    <button onclick="closeSiteModal()" class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">닫기</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdrawal</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/tailwind.js"></script>
+    <script src="tailwind.config.js"></script>
+
+</head>
+
+<body class="bg-semiMain" onload="GetSource()">
+
+    <div app-include-dom="./partials/navigation/navigation.html"></div>
+
+    <div class="container mx-auto py-5">
+        <div class="flex items-center my-5">
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='deposit.html'">입금신청</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
+                onclick="location.href='withdrawal.html'">출금신청</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='transaction-history.html'">입출금내역조회</button>
+        </div>
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+            <h2 class="text-3xl text-link font-bold mb-10">출금신청</h2>
+            
+            <div class="flex">
+                <div class="w-1/2 pr-5">
+                    <h3 class="mb-5 text-xl font-bold text-slate-500">출금방법</h3>
+                    <table class="border-t-2 border-primary w-full">
+                        <tr>
+                            <th class="w-32 px-4">
+                                <div class="border-2 border-primary/50 rounded-md text-sm font-bold py-1 text-primary">STEP 01</div>
+                            </th>
+                            <td class="py-4">
+                                <label class="block text-md text-sm mb-1">24시간 자유롭게 입, 출금이 가능하며 최장 3~5분 소요됩니다.</label>
+                                <label class="block text-primary text-xs mb-1">단, 23:00부터 00:30분(은행 자체 점검시간)의 입출금 시간에는 점검시간 종료 후</label>
+                                <label class="block text-primary text-xs mb-1">정산됩니다. 출금은 신청즉시 보유 보증금에서 차감됩니다.</label>
+                                <label class="block text-primary text-xs mb-1">*출금계좌 변경 후에는 24시간 이내에 출금이 되지 않습니다.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-32 px-4">
+                                <div class="border-2 border-primary/50 rounded-md text-sm font-bold py-1 text-primary">STEP 02</div>
+                            </th>
+                            <td class="py-4">
+                                <label class="block text-md text-sm mb-1">10분 이상 입금이 지연되는 경우에는 회원님이 입금계좌정보를 잘못</label>
+                                <label class="block text-md text-sm mb-1">기입한 경우가 많습니다.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-32 px-4">
+                                <div class="border-2 border-primary/50 rounded-md text-sm font-bold py-1 text-primary">STEP 03</div>
+                            </th>
+                            <td class="py-4">
+                                <label class="block text-md text-sm mb-1">출금계좌를 다른 계좌로 변경하시려면 고객센터로 문의해주세요.</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="w-32 px-4">
+                                <div class="border-2 border-primary/50 rounded-md text-sm font-bold py-1 text-primary">STEP 04</div>
+                            </th>
+                            <td class="py-4">
+                                <label class="block text-md text-sm mb-1">최소 1만원부터 출금이 가능합니다.</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="w-1/2 pl-5">
+                    <h3 class="mb-5 text-xl font-bold text-slate-500">출금시 주의사항</h3>
+                    <ul class="text-sm border-t-2 border-primary w-full pt-0 custom-design">
+                        <li class="mb-4">
+                            <p>출금신청자는 가입시 본인인증을 통해 입력한 고객명을 기준으로 입력됩니다.</p>
+                        </li>
+                        <li class="mb-4">
+                            <p>본인의 보유액을 타인에게 양도/양수 할 수 없습니다.</p>
+                        </li>
+                       
+                        <li class="mb-4">
+                            <p>출금신청금액란 외의 항목을 수정할 수 없습니다.</p>
+                        </li>
+                     
+                    </ul>
+                </div>
+               
+            </div>
+
+            <div class="w-full bg-white  rounded-md mt-10">
+                <h2 class="text-xl text-link font-bold mb-5">출금신청</h2>
+    
+                <table class="text-center table-auto w-full text-sm">
+                    <tbody>
+                        <tr class="border-t-2 border-primary/50">
+                            <th class="py-4 w-32 bg-slate-100">거래은행</th>
+                            <td class="text-left px-3">농협중앙(011)</td>
+                            <th class="py-4 w-32 bg-slate-100">보유금액</th>
+                            <td class="text-left px-3">390,570,704원</td>
+                        </tr>
+                        <tr class="border-t-2 border-slate-200 ">
+                            <th class="py-4 w-32 bg-slate-100">계좌번호</th>
+                            <td class="text-left px-3">0</td>
+                            <th class="py-4 w-32 bg-slate-100">예금주(받는분)</th>
+                            <td class="text-left px-3">최팀장</td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+                <table class="text-center table-auto w-full text-sm">
+                    <tbody>
+                      
+                        <tr class="border-t-2 border-slate-200 border-b-2">
+                            <th class="py-4 w-32 bg-slate-100">출금금액</th>
+                            <td class="text-left px-3">
+                                <input class="bg-slate-200 py-2 outline-primary mr-2" />
+                                <span class="mr-5">원 </span>
+                                <button class="bg-primary/10 border-2 border-primary/40 p-1 px-5 rounded-md mr-2 text-md text-primary font-bold">+1만원</button>
+                                <button class="bg-primary/10 border-2 border-primary/40 p-1 px-5 rounded-md mr-2 text-md text-primary font-bold">+5만원</button>
+                                <button class="bg-primary/10 border-2 border-primary/40 p-1 px-5 rounded-md mr-2 text-md text-primary font-bold">+10만원</button>
+                                <button class="bg-primary/10 border-2 border-primary/40 p-1 px-5 rounded-md mr-2 text-md text-primary font-bold">+100만원</button>
+                                <button class="bg-primary/10 border-2 border-primary/40 p-1 px-5 rounded-md mr-2 text-md text-primary font-bold">초기화</button>
+                            </td>
+                          
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center mt-10">
+                    <button class="text-white mr-2 font-bold p-4 px-8 rounded-md bg-primary">출금신청</button>
+                </div>
+    
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div app-include-dom="./partials/footer/footer.html"></div>
+    <iframe id="frame" class="fixed bottom-0 bg-white z-40" scrolling="no" allowtransparency="true" frameborder="0"
+        style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/tailwind.js"></script>
+    <script src="tailwind.config.js"></script>
+
+</head>
+
+<body class="bg-semiMain" onload="GetSource()">
+
+    <div app-include-dom="./partials/navigation/navigation.html"></div>
+
+    <div class="container mx-auto py-5">
+        <div class="flex items-center my-5">
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='deposit.html'">입금신청</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                onclick="location.href='withdrawal.html'">출금신청</button>
+            <button class="text-white mr-2 font-bold p-3 px-8 rounded-md bg-primary"
+                onclick="location.href='transaction-history.html'">입출금내역조회</button>
+        </div>
+
+
+        <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 px-20 py-16">
+            <h2 class="text-3xl text-link font-bold mb-10">입출금 내역조회</h2>
+
+            <span class="text-primary font-bold mb-5 block">전체 3건이 검색되었습니다.</span>
+            <table class="text-center table-auto w-full text-sm">
+                <thead>
+                    <tr class="border-t-2 border-slate-800">
+                        <th class="py-4">순번</th>
+                        <th class="py-4">은행</th>
+                        <th class="py-4">유형</th>
+                        <th class="py-4">신청일시</th>
+                        <th class="py-4">처리일시</th>
+                        <th class="py-4">상태</th>
+                        <th class="py-4">-</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-t-2 border-slate-200">
+                        <td class="py-3">
+                            <span>3</span>
+                        </td>
+                        <td class="py-3">
+                            <span>농협중앙(011)</span>
+                        </td>
+                        <td class="py-3">
+                            <button class="p-3 py-1 bg-blue-500 text-white rounded-md border-2">출금</button>
+                        </td>
+                     
+                        <td class="py-3">
+                            <span>2022/10/03 [18:28]</span>
+                        </td>
+                        <td class="py-3">
+                            <span>-</span>
+                        </td>
+                        <td class="py-3">
+                            <span>10,000</span>
+                        </td>
+                        <td class="py-3">
+                            <span>취소</span>
+                        </td>
+                        <td class="py-3">
+                            <span class="text-red-500">삭제</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200">
+                        <td class="py-3">
+                            <span>3</span>
+                        </td>
+                        <td class="py-3">
+                            <span>농협중앙(011)</span>
+                        </td>
+                        <td class="py-3">
+                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2">입금</button>
+                        </td>
+                     
+                        <td class="py-3">
+                            <span>2022/10/03 [18:28]</span>
+                        </td>
+                        <td class="py-3">
+                            <span>-</span>
+                        </td>
+                        <td class="py-3">
+                            <span>10,000</span>
+                        </td>
+                        <td class="py-3">
+                            <span>취소</span>
+                        </td>
+                        <td class="py-3">
+                            <span class="text-red-500">삭제</span>
+                        </td>
+                    </tr>
+                    <tr class="border-t-2 border-slate-200">
+                        <td class="py-3">
+                            <span>3</span>
+                        </td>
+                        <td class="py-3">
+                            <span>농협중앙(011)</span>
+                        </td>
+                        <td class="py-3">
+                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2">입금</button>
+                        </td>
+                     
+                        <td class="py-3">
+                            <span>2022/10/03 [18:28]</span>
+                        </td>
+                        <td class="py-3">
+                            <span>-</span>
+                        </td>
+                        <td class="py-3">
+                            <span>10,000</span>
+                        </td>
+                        <td class="py-3">
+                            <span>취소</span>
+                        </td>
+                        <td class="py-3">
+                            <span class="text-red-500">삭제</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <ul class="flex justify-center mt-10">
+                <li
+                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary text-white w-12 h-12 rounded-md">
+                    1</li>
+                <li
+                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">
+                    2</li>
+                <li
+                    class="flex items-center justify-center mx-1 cursor-pointer bg-primary/50 text-white w-12 h-12 rounded-md">
+                    3</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div app-include-dom="./partials/footer/footer.html"></div>
+    <iframe id="frame" class="fixed bottom-0 bg-white z-40" scrolling="no" allowtransparency="true" frameborder="0"
+        style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
