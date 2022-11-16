@@ -1,41 +1,41 @@
 function includeHTML() {
-    var z, i, elmnt, file, xhttp;
-    /* Loop through a collection of all HTML elements: */
-    z = document.getElementsByTagName("*");
-    for (i = 0; i < z.length; i++) {
-      elmnt = z[i];
-      /*search for elements with a certain atrribute:*/
-      file = elmnt.getAttribute("app-include-dom");
-      if (file) {
-        /* Make an HTTP request using the attribute value as the file name: */
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            /* Remove the attribute, and call this function once more: */
-            elmnt.removeAttribute("app-include-dom");
-            includeHTML();
-          }
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("app-include-dom");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4) {
+          if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+          if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("app-include-dom");
+          includeHTML();
         }
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        /* Exit the function: */
-        return;
       }
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
     }
   }
+}
 
-  includeHTML();
+includeHTML();
 
-  function makeid(length) {
-    var result           = '';
-    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    var charactersLength = characters.length;
-    for ( var i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
-    return result;
+function makeid(length) {
+  var result = '';
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  var charactersLength = characters.length;
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
+  return result;
 }
 
 const GetSource = () => {
@@ -49,7 +49,7 @@ const isUserLogin = () => window.localStorage.getItem("user") ? true : false;
 
 const UserLogin = () => {
   window.location.href = 'index.html';
-  window.localStorage.setItem("user" , "login");
+  window.localStorage.setItem("user", "login");
 }
 
 const UserLogout = () => {
@@ -58,7 +58,7 @@ const UserLogout = () => {
 }
 
 const CheckCurrentUser = () => {
-  if(isUserLogin()) {
+  if (isUserLogin()) {
     $('.user-block').show()
     $('.guest-block').hide()
   } else {
@@ -68,15 +68,15 @@ const CheckCurrentUser = () => {
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
   setTimeout(() => {
     CheckCurrentUser()
-  },100)
+  }, 100)
 
 })
 
 
-$('.toogle-tab').click(function() {
+$('.toogle-tab').click(function () {
   $(this).next().toggle();
 })
 
@@ -89,13 +89,13 @@ const closeSiteModal = () => {
 }
 
 const OpenSidebar = () => {
-  $('.sidebar').css('left' , '0');
+  $('.sidebar').css('left', '0');
 }
 
 const CloseSidebar = () => {
-  $('.sidebar').css('left' , '-100%');
+  $('.sidebar').css('left', '-100%');
 }
 
 const ShowRecordTable = (elem) => {
-  $(elem).parent().find('.record-table').toggle();
+  $(elem).parent().parent().find('.record-table').toggle();
 }
