@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One BTC Design Login Page</title>
+    <title>Coinbase</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/tailwind.js"></script>
     <script src="tailwind.config.js"></script>
@@ -20,17 +20,20 @@
         <div class=" items-center my-5">
             <div class="flex p-1">
                 <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary"
-                onclick="location.href='trading.html'">나의 거래내역</button>
-                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                    onclick="location.href='trading.html'">나의 거래내역</button>
+                <button
+                    class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
                     onclick="location.href='my-info.html'">내정보</button>
             </div>
             <div class="flex p-1">
-                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='my-page-inbox.html'">우편함</button>
-                <button class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
-                onclick="location.href='customer-service.html'">고객센터</button>
+                <button
+                    class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                    onclick="location.href='my-page-inbox.html'">우편함</button>
+                <button
+                    class="text-white w-1/2 mr-2 text-sm font-bold p-3 px-8 rounded-md bg-primary/50 hover:bg-primary"
+                    onclick="location.href='customer-service.html'">고객센터</button>
             </div>
-         
+
         </div>
 
         <div class="w-full bg-white p-5 rounded-md border-1 border-slate-200 p-5 py-10">
@@ -40,7 +43,7 @@
             <table class="text-center table-auto w-full text-xs">
                 <thead>
                     <tr class="border-t-2 border-slate-800">
-                     
+
                         <th class="py-4 ">구분</th>
                         <th class="py-4">금액</th>
                         <th class="py-4">수익</th>
@@ -51,16 +54,17 @@
                     <tr class="border-t-2 border-slate-200 relative">
 
                         <td class="py-3 px-3 text-center w-28">
-                            <button class="p-3 py-1 bg-blue-500 text-white rounded-md border-2 block mx-auto " onclick="ShowRecordTable(this)">매도</button>
+                            <button class="p-3 py-1 bg-blue-500 text-white rounded-md border-2 block mx-auto "
+                                onclick="ShowRecordTable(this)">매도</button>
                             <div class="record-table" style="display: none;">
                                 <hr class="my-2">
-                                <label >
+                                <label>
                                     2022/10/03
                                     <br>
-                                  [18:28]
+                                    [18:28]
                                 </label>
                             </div>
-                         
+
                         </td>
                         <td class="py-3">
                             <span>30,000</span>
@@ -75,13 +79,14 @@
                     <tr class="border-t-2 border-slate-200">
 
                         <td class="py-3 px-3">
-                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2" onclick="ShowRecordTable(this)">매수</button>
+                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2"
+                                onclick="ShowRecordTable(this)">매수</button>
                             <div class="record-table" style="display: none;">
                                 <hr class="my-2">
-                                <label >
-                                2022/10/03 
-                                <br>
-                                  [18:28]
+                                <label>
+                                    2022/10/03
+                                    <br>
+                                    [18:28]
                                 </label>
                             </div>
                         </td>
@@ -99,13 +104,14 @@
                     <tr class="border-t-2 border-slate-200">
 
                         <td class="py-3 px-3">
-                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2" onclick="ShowRecordTable(this)">매수</button>
+                            <button class="p-3 py-1 bg-red-500 text-white rounded-md border-2"
+                                onclick="ShowRecordTable(this)">매수</button>
                             <div class="record-table" style="display: none;">
                                 <hr class="my-2">
-                                <label >
+                                <label>
                                     2022/10/03
                                     <br>
-                                  [18:28]
+                                    [18:28]
                                 </label>
                             </div>
                         </td>
@@ -119,7 +125,7 @@
                             <button class="p-3 py-1 border-2 border-primary text-primary rounded-md">체결</button>
                         </td>
 
- 
+
                     </tr>
                 </tbody>
             </table>

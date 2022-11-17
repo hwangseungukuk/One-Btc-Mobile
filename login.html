@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One BTC Design Login Page</title>
+    <title>Coinbase</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/tailwind.js"></script>
     <script src="tailwind.config.js"></script>
-    
+
 </head>
-<body class="bg-white"  onload="GetSource()">
+
+<body class="bg-white" onload="GetSource()">
     <div app-include-dom="./partials/navigation/navigation.html"></div>
 
     <div class="container mx-auto">
@@ -22,34 +24,35 @@
             </div>
             <div class="w-full px-2 my-4">
                 <label class="font-bold text-slate-700 text-md mb-2 block">ID</label>
-                <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="아이디">
+                <input type="text" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500"
+                    placeholder="아이디">
             </div>
             <div class="w-full px-2 my-4">
                 <label class="font-bold text-slate-700 text-md mb-2 block">Password</label>
-                <input type="password" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500" placeholder="비밀번호">
+                <input type="password" class="w-full p-2 border-1 text-sm border-stone-200 rounded-sm outline-blue-500"
+                    placeholder="비밀번호">
             </div>
 
             <div class="w-full px-2 my-5 ">
-                <button class="text-white mr-2 font-bold p-3 px-4 rounded-md bg-primary w-full" onclick="UserLogin()" >로그인</button>
+                <button class="text-white mr-2 font-bold p-3 px-4 rounded-md bg-primary w-full"
+                    onclick="UserLogin()">로그인</button>
             </div>
 
             <ul class="flex justify-center items-center">
-                <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="location.href='register.html'">회원가입</li>
-                <li class="px-4 text-sm text-link cursor-pointer font-bold border-l-2 border-r-2 border-slate-200" onclick="ToogleModal('#find-id')">아이디 찾기</li>
-                <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="ToogleModal('#find-password')">비밀번호 찾기</li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="location.href='register.html'">회원가입
+                </li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold border-l-2 border-r-2 border-slate-200"
+                    onclick="ToogleModal('#find-id')">아이디 찾기</li>
+                <li class="px-4 text-sm text-link cursor-pointer font-bold" onclick="ToogleModal('#find-password')">비밀번호
+                    찾기</li>
             </ul>
-           
-        
+
+
         </div>
     </div>
-      
-    <iframe 
-    id="frame"
-    class="fixed bottom-0 bg-white z-40" 
-    scrolling="no" 
-    allowtransparency="true" 
-    frameborder="0"
-    style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
+
+    <iframe id="frame" class="fixed bottom-0 bg-white z-40" scrolling="no" allowtransparency="true" frameborder="0"
+        style="box-sizing: border-box; height: 46px; width: 100%;"></iframe>
 
     <div app-include-dom="./partials/modal/find-id.html"></div>
     <div app-include-dom="./partials/modal/find-password.html"></div>
@@ -58,4 +61,5 @@
 <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
     integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 <script src="assets/js/script.js"></script>
+
 </html>
